@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa de pica</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>MAYKE</h1>
+      <p>Especialistas em manutenção e reparo para maximizar sua produção.</p>
+      <a href="#contact" class="cta-button">Peça uma Cotação</a>
+    </div>
+  </header>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+    </div>
+    <div class="container_image">
+   <img src="imgs\twoguyspngEXAMPLE.png" alt="Fundadores da empresa" srcset="">
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services">
+    <div class="container">
+      <h2>Nossos Serviços</h2>
+      <div class="service-cards">
+        <div class="card">
+          <h3>Manutenção Preventiva</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="card">
+          <h3>Reparo de Emergência</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+        <div class="card">
+          <h3>Instalação de Máquinas</h3>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+ <!-- Completed Projects Section with Carousel -->
+<section id="completed-projects">
+    <div class="container">
+      <h2>Serviços Realizados</h2>
+      <div class="carousel">
+        <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <div class="carousel-track-container">
+          <div class="carousel-track">
+            <div class="project-card">
+              <img src="imgs\ImageExample1.jpg" alt="Projeto de Reparo Industrial 1">
+              <h3>Anal giratório</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="project-card">
+              <img src="imgs\ImageExampleDICKs.jpg" alt="Projeto de Reparo Industrial 2">
+              <h3>Mamada preventiva</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <div class="project-card">
+              <img src="imgs\ImageExample1.jpg" alt="Projeto de Reparo Industrial 3">
+              <h3>Calibração de pica mucha</h3>
+              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+            </div>
+            <!-- Adicione mais projetos aqui, se necessário -->
+          </div>
+        </div>
+        <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="container">
+      <h2>Entre em Contato</h2>
+      <p>Solicite uma cotação ou tire suas dúvidas agora mesmo.</p>
+      <form action="#" method="post">
+        <input type="text" name="name" placeholder="Nome" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="cta-button">Enviar Mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 MAUMAU. Todos os direitos reservados.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
