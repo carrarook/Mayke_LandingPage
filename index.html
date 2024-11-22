@@ -1,104 +1,155 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>BEMAK</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
 </head>
+
+ <!-- Popup -->
+ <div class="popup">
+  <div class="popup-content">
+    <h2>Site em Manutenção</h2>
+    <p>O site está temporariamente em manutenção. Por favor, tente novamente mais tarde.</p>
+    <button class="close-popup"style="
+    background: #fff;
+">Fechar</button>
+    <button class="exit-popup">Sair</button>
+  </div>
+</div>
+
 <body>
-  <!-- Header -->
-  <header>
-    <div class="container">
-      <h1>BEMAK</h1>
-      <p>Especialistas em manutenção e reparo para maximizar sua produção.</p>
-      <a href="#contact" class="cta-button">Peça uma Cotação</a>
-    </div>
-  </header>
+    <nav id="highlights">
+        <i class="fa fa-bars fa-1x" aria-hidden="true"></i>
+        <span class="highlight" data-section="section1"><a href="#section1"> Sobre Nós</a></span>
+        <span class="highlight" data-section="section2"><a href="#section2">Nossos Serviços</a></span>
+        <span class="highlight" data-section="section3"><a href="#section3">Serviços Realizados</a></span>
+        <span class="highlight" data-section="section4"><a href="#section4">Contato</a></span>
+    </nav>
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>Sobre Nós</h2>
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-    </div>
-    <div class="container_image">
-   <img src="imgs\twoguyspngEXAMPLE.png" alt="Fundadores da empresa" srcset="">
-    </div>
-  </section>
+    <header>
+        <div class="container">
+            <h1><i>BEMAK</i></h1>
+        </div>
+    </header>
 
-  <!-- Services Section -->
-  <section id="services">
-    <div class="container">
-      <h2>Nossos Serviços</h2>
-      <div class="service-cards">
-        <div class="card">
-          <h3>Manutenção Preventiva</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    <section id="section1" class="section">
+        <div class="container">
+            <h2>Sobre Nós</h2>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
         </div>
-        <div class="card">
-          <h3>Reparo de Emergência</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        <div class="container_image">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fofficialpsds.com%2Ftwo-guys-png-7vym01&psig=AOvVaw1j6J_tG2QXU7WfIzSThsLY&ust=1732380586792000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMjGxuSy8IkDFQAAAAAdAAAAABAE" alt="Fundadores da empresa">
         </div>
-        <div class="card">
-          <h3>Instalação de Máquinas</h3>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </section>
+
+    <section id="section2" class="section">
+        <div class="container">
+            <h2>Nossos Serviços</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <h3>Manutenção Preventiva</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="card">
+                    <h3>Reparo de Emergência</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+                <div class="card">
+                    <h3>Instalação de Máquinas</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                </div>
+            </div>
         </div>
+    </section>
+
+    <section id="section3" class="section">
+        <div class="container">
+            <h2>Serviços Realizados</h2>
+            <div class="carousel">
+                <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
+                <div class="carousel-track-container">
+                    <div class="carousel-track">
+                        <div class="project-card">
+                            <img src="imgs/ImageExample1.jpg" alt="Projeto de Reparo Industrial 1">
+                            <h3>Projeto Industrial 1</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="imgs/ImageExample2.jpg" alt="Projeto de Reparo Industrial 2">
+                            <h3>Projeto Industrial 2</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                        <div class="project-card">
+                            <img src="imgs/ImageExample3.jpg" alt="Projeto de Reparo Industrial 3">
+                            <h3>Projeto Industrial 3</h3>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="section4" class="section">
+      <div class="container">
+          <h2>Entre em Contato</h2>
+          <p>Solicite uma cotação ou tire suas dúvidas agora mesmo.</p>
+          <form id="contact-form" action="https://formsubmit.co/obrunocarraro@gmail.com" method="POST">
+            <!-- Nome -->
+            <input type="text" name="name" class="form-control" placeholder="Nome" required>
+            <!-- Email -->
+            <input type="email" name="email" class="form-control" placeholder="Email" required>
+            <!-- Telefone -->
+            <input type="tel" name="phone" class="form-control" placeholder="Telefone (com DDD)" required>
+            <!-- Empresa -->
+            <input type="text" name="company" class="form-control" placeholder="Empresa" required>
+            <!-- Estado -->
+            <select name="state" id="state" class="form-control" required>
+                <option value="" disabled selected>Selecione o estado</option>
+            </select>
+            <!-- Cidade -->
+            <select name="city" id="city" class="form-control" required>
+                <option value="" disabled selected>Selecione a cidade</option>
+            </select>
+            <!-- Urgência -->
+            <select name="urgency" class="form-control" required>
+                <option value="" disabled selected>Selecione o nível de urgência</option>
+                <option value="Baixa">Baixa</option>
+                <option value="Média">Média</option>
+                <option value="Alta">Alta</option>
+            </select>
+            <!-- Mensagem -->
+            <textarea name="message" rows="4" class="form-control" placeholder="Mensagem" required></textarea>
+            <!-- Botão de Enviar -->
+            <button type="submit" class="cta-button">Enviar Mensagem</button>
+            <!-- Campos ocultos para segurança -->
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+        </form>
+
       </div>
-    </div>
-  </section>
 
-
- <!-- Completed Projects Section with Carousel -->
-<section id="completed-projects">
-    <div class="container">
-      <h2>Serviços Realizados</h2>
-      <div class="carousel">
-        <button class="carousel-button prev" onclick="moveCarousel(-1)">&#10094;</button>
-        <div class="carousel-track-container">
-          <div class="carousel-track">
-            <div class="project-card">
-              <img src="imgs\ImageExample1.jpg" alt="Projeto de Reparo Industrial 1">
-              <h3>Anal giratório</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="project-card">
-              <img src="imgs\ImageExampleDICKs.jpg" alt="Projeto de Reparo Industrial 2">
-              <h3>Mamada preventiva</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <div class="project-card">
-              <img src="imgs\ImageExample1.jpg" alt="Projeto de Reparo Industrial 3">
-              <h3>Calibração de pica mucha</h3>
-              <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-            </div>
-            <!-- Adicione mais projetos aqui, se necessário -->
-          </div>
-        </div>
-        <button class="carousel-button next" onclick="moveCarousel(1)">&#10095;</button>
+      <div class="contatoProprio">
+        <i class="fa fa-phone" aria-hidden="true"> <a href="tel:+554112345678"> (41)1234-5678</a></i>
+        <i class="fa fa-envelope" aria-hidden="true"><a href="mailto:MaykeCorrea@Bemak.com.br?subject=Cotação&cc=Socio@Bemak.com.br&bcc=SocioOculto@Bemak.com.br&body=Olá, estou em busca de uma cotação para o serviço XXXXXXXX na empresa XXXXXXXX, localizado em XXXXXXXX. Urgência: XXXXX. CONTATO: XXXXXXXXXX | EMAIL: XXXXXXXXXXX@XXXXXXX.XXX">  MaykeCorrea@Bemak.ccom.br</a></i>
+        <i class="fa fa-whatsapp" aria-hidden="true"><a href="https://wa.me/(41)12345678"> (41)1234-5678</a></i>
       </div>
-    </div>
   </section>
+ 
+        
+   
   
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Entre em Contato</h2>
-      <p>Solicite uma cotação ou tire suas dúvidas agora mesmo.</p>
-      <form target="_blank" action="https://formsubmit.co/obrunocarraro@gmail.com" method="POST">
-        <input type="text" name="name" class="form-control" placeholder="Nome" required>
-        <input type="email" name="email" class="form-control" placeholder="Email" required>
-        <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
-        <button type="submit" class="cta-button">Enviar Mensagem</button>
-      </form>
-    </div>
-  </section>
+    <footer>
+        <p>&copy; 2024 BEMAK. Todos os direitos reservados.</p>
+    </footer>
 
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2024 MAUMAU. Todos os direitos reservados.</p>
-  </footer>
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
